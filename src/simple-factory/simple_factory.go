@@ -36,3 +36,11 @@ func NewAnimal(a string) animal {
 		return &cat{"m", 0}
 	}
 }
+
+func main() {
+	dog1 := NewAnimal("dog")
+	cat1 := NewAnimal("cat")
+
+	fmt.Printf("%s", dog1.eat("b"))
+	fmt.Printf("%s", cat1.eat("c"))
+}

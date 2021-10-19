@@ -23,7 +23,7 @@ type cat struct {
 }
 
 func (c *cat) eat(food string) string {
-	return fmt.Sprintf("dog %s eating %s", c.name, food)
+	return fmt.Sprintf("cat %s eating %s", c.name, food)
 }
 
 func NewAnimal(a string) animal {

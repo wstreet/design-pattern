@@ -5,7 +5,7 @@ import (
 )
 
 type Cpu interface {
-	calculate()
+	calculate() string
 }
 
 //-------Acpu类---------------
@@ -17,8 +17,10 @@ func NewAcpu() *Acpu {
 	return &Acpu{2}
 }
 
-func (a Acpu) calculate() {
-	fmt.Println("Acpu calculate result")
+func (a Acpu) calculate() string {
+	result := fmt.Sprintf("Acpu has %d core calculate result", a.core)
+
+	return result
 }
 
 //-------Bcpu类---------------
@@ -30,8 +32,9 @@ func NewBcpu() *Bcpu {
 	return &Bcpu{4}
 }
 
-func (b Bcpu) calculate() {
-	fmt.Println("Bcpu calculate result")
+func (b Bcpu) calculate() string {
+	result := fmt.Sprintf("Bcpu has %d core calculate result", b.core)
+	return result
 }
 
 // 工厂抽象

@@ -2,8 +2,8 @@
 
 ## TOC
 * 创建模式
-  * 简单工厂模式
-  * 工厂方法模式
+  * [简单工厂模式](./src/simple_factory/readme.md)
+  * [工厂方法模式](./src/simple_factory/readme.md)
   * 抽象工厂模式
   * 创建者模式
   * 原型模式
